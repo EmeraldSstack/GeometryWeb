@@ -1,6 +1,10 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
+const supabaseUrl = 'https://kjtlbkxvytpqxiwqeuyv.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtqdGxia3h2eXRwcXhpd3FldXl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5Mzg0MDYsImV4cCI6MjA2NTUxNDQwNn0.9piNOFW8yLOe7UxKcM0s8IU2yaepOrIrkWdUGiY-QjI';
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
 // Player
 let player = {
   x: 50,
