@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GeometryWeb</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
-</head>
 <body>
-  <div class="menu-container">
+  <div class="menu-container" id="main-menu">
+    <!-- [same as before] -->
     <h1 class="logo-text">GeometryWeb</h1>
     <div class="main-buttons">
       <button class="menu-btn" id="play-btn">▶ Play</button>
@@ -26,10 +18,11 @@
     </div>
   </div>
 
+  <canvas id="gameCanvas" width="800" height="400" style="display: none;"></canvas>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
   <script>
     lucide.createIcons();
   </script>
 </body>
-</html>
